@@ -25,7 +25,6 @@ import datetime
 from ccs_base import CCS_PHOTOGRAPH_UUID
 from picamera2 import Picamera2
 from libcamera import controls
-from ccs_dlconfig import config
 import xml.etree.ElementTree as et
 
 NAME                              = 'dlfoto'
@@ -77,7 +76,6 @@ class FotoLogger(object):
             self.burst_count = int(root.find(TAG_BURST_COUNT).text.strip())
             self.burst_delay = int(root.find(TAG_BURST_DELAY).text.strip())
             self.photo_dir = root.find(TAG_PHOTO_DIR).text.strip()
-
         except Exception as ex:
             self.logmsg('Error parsing config: ' + str(ex))
 
