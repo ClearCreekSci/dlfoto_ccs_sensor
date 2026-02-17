@@ -1,2 +1,2 @@
-# dlfoto_ccs_plugin
-Clear Creek Scientific data logger plugin for Raspberry Pi camera photographs
+# dlfoto_ccs_sensor
+Clear Creek Scientific data logger sensor module to capture Raspberry Pi camera photographs
